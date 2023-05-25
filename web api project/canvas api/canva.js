@@ -10,6 +10,7 @@ let color = "black";
 let thickness = 5;
 let isEraser = false;
 let isThicknessChanged = false;
+let x = 0;
 
 let draw = document.querySelector(".fa-pencil");
 let eraser = document.querySelector(".fa-eraser");
