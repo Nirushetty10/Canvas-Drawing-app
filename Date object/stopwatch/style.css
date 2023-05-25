@@ -1,0 +1,26 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.timeContainer{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #7AB0DF;
+    font-family: Roboto;
+}
+.time {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}

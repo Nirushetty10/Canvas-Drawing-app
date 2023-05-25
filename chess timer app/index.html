@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          Player1 (BLACK)
+        </div>
+        <div class="card-body" onclick="blackSideClicked()">
+          <div class="Bminutes">10</div>
+          <div class="Bseconds">00</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button type="button" onclick="resetTime()">RESET</button>
+        <div class="middleButton">
+          <button type="button" id="playButton" onclick="onPlayBtnClicked()">PLAY</button>
+          <button type="button" id="pauseButton" disabled onclick="onPauseButtonClicked()">PAUSE</button>
+        </div>
+        <button type="button" onclick="setGameTiming()">SET TIMINGS</button>
+      </div>
+
+      
+
+      <div class="card">
+        <div class="card-header">
+          Player2 (WHITE)
+        </div>
+        <div class="card-body" onclick="whiteSideClicked()">
+          <div class="Wminutes">10</div>
+          <div class="Wseconds">00</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <div class="inputUser">
+        <h3>Please select the game timings</h3>
+        <select id="userSelectedTime" value="10">
+          <option value="2">2</option>
+          <option value="5">5</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      </div>
+      <button type="button" onclick="onUserEnterInput()">OK</button>
+   </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+    
+  </body>
+</html>

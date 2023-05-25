@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="containLeft">
+            <h1>Number Game</h1>
+            <h5>Enter 4 digit unique number</h5>
+            <div class="section">
+                <input type="number" id="numb1" min="1000" max="9999" placeholder="Enter 4 digit unique number">
+                <button type="button" id="num1Btn" onclick="onInputEntered('numb1','firstInput')">Next</button>
+            </div>
+            
+            <div class="section">
+                <input type="number" id="numb2" min="1000" max="9999" placeholder="Enter 4 digit unique number" disabled>
+                <button type="button" id="num2Btn" disabled onclick="onInputEntered('numb2','secondInput')">Next</button>
+            </div>
+            <h5>System number 1 - <span id="SystemNumber1"></span></h5>
+            <div class="section">
+                <input type="number" id="numb3" min="1000" max="9999" placeholder="Enter 4 digit unique number" disabled>
+                <button type="button" id="num3Btn" disabled onclick="onInputEntered('numb3','thirdInput')">Next</button>
+            </div>
+            <h5>System number 2 - <span id="SystemNumber2"></span></h5>
+
+            <button type="button" id="numberviewButton" disabled onclick="seeResultHandler()">See the Number</button>
+            
+        </div>
+        <div class="containRight">
+            <div class="secreteBox">
+                <h4 id="secreteText">Secrete number is : <span class="secreteNum"></span></h4>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "persons": [
+    {
+      "name": "Himam",
+      "place": "Andhra",
+      "id": 1
+    },
+    {
+      "name": "Niranjan",
+      "place": "karnataka",
+      "id": 2
+    },
+    {
+      "name": "Kumar",
+      "place": "dhavangere",
+      "id": 3
+    }
+  ]
+}

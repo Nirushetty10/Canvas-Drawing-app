@@ -1,0 +1,14 @@
+let a = document.querySelectorAll("a")
+
+let content = [
+    "An array is a special variable, which can hold more than one value .Why Use Arrays?If you have a list of items (a list of car names, for example), storing the cars in single let car3 = 'BMW' variables could look like this let car1 = 'Saab' let car2 = 'Volvo' However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300? The solution is an array! An array can hold many values under a single name, and you can access the values by referring to an index number.Creating an Array Using an array literal is the easiest way to create a JavaScript Array.Syntaxconst array_name = [item1, item2, ...]",
+    "The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer / literal syntax.Nearly all objects in JavaScript are instances of Object; a typical object inherits properties (including methods) from Object.prototype, although these properties may be shadowed (a.k.a. overridden). The only objects that don't inherit from Object.prototype are those with null prototype, or descended from other null prototype objects. syntax(literal method) let obj= {name : 'value',...... } ",
+    "A JavaScript function is a block of code designed to perform a particular task.A JavaScript function is executed when 'something' invokes it (calls it).A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).The parentheses may include parameter names separated by commas:(parameter1, parameter2, ...)The code to be executed, by the function, is placed inside curly brackets: '{}' ",
+    "When a web page is loaded, the browser creates a Document Object Model of the page.The HTML DOM model is constructed as a tree of Objects:With the object model, JavaScript gets all the power it needs to create dynamic HTML:JavaScript can change all the HTML elements in the page. JavaScript can change all the HTML attributes in the page. JavaScript can change all the CSS styles in the pageJavaScript can remove existing HTML elements and attributes.JavaScript can add new HTML elements and attributes. JavaScript can react to all existing HTML events in the page. JavaScript can create new HTML events in the page"
+]
+for(let i=0; i<a.length; i++ ){
+    a[i].addEventListener("click", ()=>{
+        document.getElementById("heading").textContent = a[i].textContent;
+        document.getElementById("content").textContent= content[i]
+    })
+}
