@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="canvastyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="box">
+        <div class="nav">
+            <h2>Canvas API project</h2>
+            <input type="range" id="thicknesRange" value="5" min="1" max="25" oninput="changeThickness(this.value)">
+            <div class="thicknessValue">5</div>
+        </div>
+        <div class="container-area">
+            <div class="control-buttons">
+                <div class="drawTool">
+                    <i class="fa-solid fa-pencil" onclick="enableDraw()"></i>
+                </div>
+                <div class="color-picker">
+                    <input type="color" name="" id="colorPicker" value="balck" onchange="changeColor(this.value)">
+                </div>
+                <div class="eraser">
+                    <i class="fa-solid fa-eraser" onclick="enableEraser()"></i>
+                </div>
+            </div>
+            
+            <div class="draw-area">
+                <canvas id="myCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./canva.js"></script>
+</body>
+</html>
